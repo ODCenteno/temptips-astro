@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
+
+const allPost = await Astro.glob('../content/*.md');
 ---
 
 <Layout title="Temptips">
@@ -10,8 +12,15 @@ import Hero from "../components/Hero.astro";
 		<Header title="TempTips" />
 		<Hero />
 		<ul role="list" class="link-card-grid">
-			<Card title="Supercard with Astro" time="2023-05-23" tags="TypeScript" />
-			<Card title="Webpage Supercharged" time="2023-05-17" tags="JavaScript" />
+			{
+				allPost.map((post) => (
+					<Card 
+					title={post?.frontmatter.title} 
+					time={post?.frontmatter.pubDate} 
+					tags={post?.frontmatter?.tags} 
+					/>
+				))
+			}
 		</ul>
 	</main>
 </Layout>
