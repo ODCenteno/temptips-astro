@@ -1,9 +1,10 @@
 ---
 title: "Hello reality!"
-pubDate: 2024-05-07
+pubDate: 2024-05-09
 description: "This is my amazing world discovered with Astro"
-image: 
+image: "https://picsum.photos/200/3007"
 tags: ["astro", "javascript"]
+layout: "../../layouts/Posts.astro"
 ---
 
 Una noche, después de muchas horas de programación, Alex se recostó en su cama y se quedó dormido. En su sueño, se encontró explorando una galaxia de lenguajes de programación increíbles y descubriendo nuevas herramientas y bibliotecas en cada planeta que visitaba.

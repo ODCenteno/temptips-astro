@@ -1,9 +1,10 @@
 ---
 title: "Hello Galaxy!"
-pubDate: 2024-05-07
+pubDate: 2024-05-08
 description: "This is my amazing world discovered with Astro"
-image: 
+image: "https://picsum.photos/200/300"
 tags: ["astro", "javascript"]
+layout: "../../layouts/Posts.astro"
 ---
 
 Después de muchos años de explorar el mundo virtual que había descubierto, el programador Alex se encontró con una puerta misteriosa en un lugar remoto de su universo programático. La puerta no tenía cerradura ni llave, pero parecía estar hecha de un material desconocido y resplandecía con una luz intensa.

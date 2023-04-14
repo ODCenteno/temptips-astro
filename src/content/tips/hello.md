@@ -2,8 +2,9 @@
 title: "Hello world!"
 pubDate: 2024-05-07
 description: "This is my amazing world discovered with Astro"
-image: 
+image: "https://picsum.photos/200/300"
 tags: ["astro", "javascript"]
+layout: "../../layouts/Posts.astro"
 ---
 
 Había una vez un programador de JavaScript llamado Alex que pasaba la mayor parte de su tiempo programando en su pequeño apartamento en la ciudad. Era un apasionado de la programación y siempre estaba buscando nuevas formas de desafiarse a sí mismo.

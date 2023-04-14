@@ -1,20 +1,23 @@
 ---
 // Archivo donde se leerá la lógina para crear las rutas dinámicas
 import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Header from "../../components/Header";
 
 export async function getStaticPaths() {
-  const posts = await getCollection('tips');
+  const posts = await getCollection("tips");
   return posts.map((post) => (
     {
-      params: {slug: post.slug},
+      params: { slug: post.slug },
       props: post, 
     }
   ));
 }
 
-const { post } = Astro.props;
+const post = Astro.props;
 const  { Content } = await post.render();
 ---
-
-<Content />
-
+<Base title="AstroBuil.Tips">
+  <Header title="Temptips" />
+  <Content />
+</Base>
